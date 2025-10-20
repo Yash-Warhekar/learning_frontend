@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#box{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(17, 199, 23);
+    position: absolute;
+    animation-name: bhavesh;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+@keyframes bhavesh {
+    0%{
+        left: 0;
+        background-color: #df0606;
+        rotate: 0deg;
+    }
+    50%{
+        left: 75%;
+        top: 0;
+    }
+    100%{
+        left: 75%;
+        top: 50%;
+        background-color: blueviolet;
+        /* rotate: 135deg; */
+    }
+}
