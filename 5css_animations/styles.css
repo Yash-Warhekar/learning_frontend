@@ -9,7 +9,47 @@ html,body{
     width: 100%;
 }
 
-#box{
+body{
+    background-color: black;
+    padding: 5vh;
+}
+
+button{
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid cyan;
+    color: cyan;
+    font-weight: 600;
+    position: relative;
+}
+
+button::after{
+    content: '';
+    height: 100%;
+    width: 0%;
+    background-color: cyan;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all linear 0.5s;
+    z-index: -1;
+}
+
+button:hover{
+    color: rgb(0, 0, 0);
+}
+
+button:hover::after{
+    width: 100%;
+
+}
+
+
+
+
+
+
+/* #box{
     height: 300px;
     width: 300px;
     background-color: rgb(17, 199, 23);
@@ -17,7 +57,13 @@ html,body{
     animation-name: bhavesh;
     animation-duration: 3s;
     animation-delay: 2s;
-}
+} */
+
+
+
+
+
+
 
 @keyframes bhavesh {
     0%{
